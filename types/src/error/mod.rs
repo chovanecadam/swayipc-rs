@@ -25,4 +25,6 @@ pub enum Error {
     CommandFailed(String),
     #[error("command could not be parsed '{0}'")]
     CommandParse(String),
+    #[error("failed to connect to either i3 or sway")]
+    ConnectionError,
 }
